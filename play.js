@@ -1,9 +1,13 @@
 function getComputerChoice() {
-    let rock = 0;
-    let paper = 1;
-    let scissors = 2;
-
-    return Math.floor(Math.random() * 3);
+    let compChoice = Math.floor(Math.random() * 3);
+    
+    if (compChoice === 0) {
+        return("rock");
+    } else if (compChoice === 1) {
+        return("paper");
+    } else if (compChoice === 2) {
+        return("scissors");
+    }
 }
 
-console.log();
+console.log(getComputerChoice());
