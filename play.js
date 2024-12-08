@@ -43,6 +43,7 @@ function playRound(humanChoice, computerChoice) {
     (computerChoice === "paper" && humanChoice === "paper") ||  
     (computerChoice === "scissors" && humanChoice === "scissors")) {
         console.log("You tied!");
+        console.log("Score: " + humanScore + " - " + computerScore);
         console.log("");
     } else if (computerChoice === "rock" && humanChoice === "paper") {
         humanScore++;
@@ -92,24 +93,35 @@ function playGame() {
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
         
-        if(humanScore >= 3) {
+        // if(humanScore >= 3) {
+        //     console.log("GAME OVER");
+        //     console.log("You win!");
+        //     break;
+        // } else if (computerScore >= 3) {
+        //     console.log("GAME OVER");
+        //     console.log("Computer wins!");
+        //     break;
+        // }
+
+        // if ((humanScore === computerScore) && humanScore === 3 && computerScore === 3) {
+        //     console.log("GAME OVER");
+        //     console.log("Tie!");
+        //     break;
+        // }
+
+        if (i = 5 && humanScore > computerScore) {
             console.log("GAME OVER");
             console.log("You win!");
             break;
-        } else if (computerScore >= 3) {
+        } else if (i = 5 && humanScore > computerScore) {
             console.log("GAME OVER");
             console.log("Computer wins!");
             break;
-        } else if (humanScore === computerScore) {
+        } else if (i = 5 && (humanScore === computerScore)) {
             console.log("GAME OVER");
             console.log("Tie!");
             break;
         }
-
-        // if(humanScore === computerScore) {
-        //     console.log("GAME OVER");
-        //     console.log("Tie!");
-        // }
     }
 }
 
