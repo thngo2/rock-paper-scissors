@@ -108,5 +108,3 @@ function playGame() {
 
 playGame();
 
-
-// if (i = 5 && (humanScore === computerScore)) 
