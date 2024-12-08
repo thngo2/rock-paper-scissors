@@ -100,12 +100,16 @@ function playGame() {
             console.log("GAME OVER");
             console.log("Computer wins!");
             break;
-        }
-
-        if(humanScore === computerScore) {
+        } else if (humanScore === computerScore) {
             console.log("GAME OVER");
             console.log("Tie!");
+            break;
         }
+
+        // if(humanScore === computerScore) {
+        //     console.log("GAME OVER");
+        //     console.log("Tie!");
+        // }
     }
 }
 
