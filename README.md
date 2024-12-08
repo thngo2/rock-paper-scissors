@@ -1,6 +1,6 @@
 ### rock-paper-scissors ###
 
-This game lets users play a classic 5-round match of Rock-Paper-Scissors against the computer.
+This game lets users play a classic 5-round match of Rock-Paper-Scissors against the computer. To view gameplay, please open up the Inspect page and open up Source.
 
 **Gameplay:**
 Players choose between rock, paper, or scissors for each round, while the computer randomly selects its move.
