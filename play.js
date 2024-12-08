@@ -87,45 +87,26 @@ const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 
 function playGame() {
-    for(let i = 0; i < 5; i++) {
+    for(let i = 0; i < 4; i++) {
 
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
-        
-        // if(humanScore >= 3) {
-        //     console.log("GAME OVER");
-        //     console.log("You win!");
-        //     break;
-        // } else if (computerScore >= 3) {
-        //     console.log("GAME OVER");
-        //     console.log("Computer wins!");
-        //     break;
-        // }
+    }
 
-        // if ((humanScore === computerScore) && humanScore === 3 && computerScore === 3) {
-        //     console.log("GAME OVER");
-        //     console.log("Tie!");
-        //     break;
-        // }
-
-        if (i = 5 && humanScore > computerScore) {
-            console.log("GAME OVER");
-            console.log("You win!");
-            break;
-        } else if (i = 5 && humanScore > computerScore) {
-            console.log("GAME OVER");
-            console.log("Computer wins!");
-            break;
-        } else if (i = 5 && (humanScore === computerScore)) {
-            console.log("GAME OVER");
-            console.log("Tie!");
-            break;
-        }
+    if (humanScore > computerScore) {
+        console.log("GAME OVER");
+        console.log("You win!");
+    } else if (humanScore < computerScore) {
+        console.log("GAME OVER");
+        console.log("Computer wins!");
+    } else if (humanScore === computerScore) {
+        console.log("GAME OVER");
+        console.log("Tie!");
     }
 }
 
 playGame();
 
 
-  
+// if (i = 5 && (humanScore === computerScore)) 
